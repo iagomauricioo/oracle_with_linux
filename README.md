@@ -155,7 +155,7 @@ Nos campos abaixo, você colocará os seguintes dados:
 `Port`: 1521 (padrão Oracle) <br>
 `Database`: XE <br>
 `Nome de usuário`: system <br>
-`Senha`: <SUA SENHA>
+`Senha`: suaSenha
 
 Em seguida, clique em `Testar conexão`.
 
