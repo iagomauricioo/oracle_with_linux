@@ -151,10 +151,10 @@ Selecione a opção 'Oracle' e aperte em `next`.
 
 Nos campos abaixo, você colocará os seguintes dados:
 
-`Host`: localhost
-`Port`: 1521 (padrão Oracle)
-`Database`: XE
-`Nome de usuário`: system
+`Host`: localhost <br>
+`Port`: 1521 (padrão Oracle) <br>
+`Database`: XE <br>
+`Nome de usuário`: system <br>
 `Senha`: <SUA SENHA>
 
 Em seguida, clique em `Testar conexão`.
