@@ -1,0 +1,21 @@
+services:
+  oracle-xe:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: oracle-xe
+    ports:
+      - 1521:1521
+      - 5500:5500
+    environment:
+      - ORACLE_PASSWORD=123
+      - APP_USER=iago
+      - APP_USER_PASSWORD=1234
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    healthcheck:
+      test: ["CMD-SHELL", "echo 'SELECT 1 FROM dual;' | sqlplus -s system/$ORACLE_PASSWORD@localhost:1521/XEPDB1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+volumes:
+  oracle-data:
